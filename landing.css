@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body background with gradient */
+body {
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f39c12, #8e44ad);
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+.header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 28px;
+}
+
+.logo span {
+    color: #ffd700;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.header-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background: #e63946;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #d62828;
+}
+
+/* About, Features, and Contact Section */
+.about, .features, .contact {
+    padding: 60px 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+/* Features section with colored boxes */
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    background-color: #3498db; /* Default color for the boxes */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    flex-basis: 23%;
+    color: #fff;
+    text-align: center;
+    position: relative; /* Make sure popups are positioned correctly */
+    transition: background 0.3s ease, transform 0.3s ease; /* Add transition for transform */
+}
+
+.feature-box:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.feature-box i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 18px;
+}
+
+/* Popup styling */
+.popup {
+    visibility: hidden; /* Hidden by default */
+    position: absolute; /* Position relative to feature box */
+    bottom: 100%; /* Position above the feature box */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centering adjustment */
+    background: #e74c3c; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevent line breaks */
+    opacity: 0; /* Make it transparent initially */
+    transition: visibility 0s, opacity 0.2s ease-in-out; /* Smooth transition */
+    z-index: 10; /* On top of other elements */
+}
+
+/* Show the popup when hovering over the feature box */
+.feature-box:hover .popup {
+    visibility: visible; /* Show on hover */
+    opacity: 1; /* Make it fully visible */
+}
+
+/* Contact Form */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background: #e63946;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #d62828;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+}
+
+
+
+
+
+
+/* Add more styling for feature and other sections if needed */
+
+
+
